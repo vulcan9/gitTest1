@@ -1,0 +1,47 @@
+extends layout
+
+// 주석달기 샘플
+
+block content
+	h1= title
+	p Welcome to #{title}
+	p
+
+	#game
+		#bingo
+			table.bingo-board
+				tr
+					td
+					td
+					td
+					td
+					td
+				tr
+					td
+					td
+					td
+					td
+					td
+				tr
+					td
+					td
+					td
+					td
+					td
+				tr
+					td
+					td
+					td
+					td
+					td
+				tr
+					td
+					td
+					td
+					td
+					td
+	#user
+		#list list #{username}
+		#logs logs
+		input#start_button(type='button', value='Game Start!')
+		input#username(type='hidden', value='#{username}')

@@ -1,0 +1,45 @@
+<html>
+	<head>
+    	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    	
+		<script src="/socket.io/socket.io.js"></script>
+		
+		<script>
+			var socket = io.connect('http://localhost');
+			
+			// 'news' 메세지 받음
+			socket.on(
+				'news',
+				function (data)
+				{
+					console.log('1', data);
+					
+					// 서버측에 메세지 발송
+					socket.emit(
+						'my other event',
+						{my:'data'}
+					);
+				}
+			);
+			
+			/*
+			// 'user connect' 메세지 받음
+			socket.on(
+				'user connect',
+				function (data)
+				{
+					console.log('2', data);
+				}
+			);
+			*/
+		</script>
+    	
+    </head>
+    
+	<body>
+		<form action="/upload" method="post">
+			<textarea name="text" rows="20" cols="60"> </textarea>
+			<input type="submit" value="Submit text" />
+		</form>
+	</body>
+</html>

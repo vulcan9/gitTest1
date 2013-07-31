@@ -1,0 +1,67 @@
+﻿console.log("프로젝트 진행 방법.js 파일을 참고하세요");
+
+/*
+//--------------------------
+// 모듈 설치
+//--------------------------
+
+* 개발중인  app소스 자동으로 적용시켜주는 모듈
+(소스 수정 후 매번 다시 실행할 필요 없도록 해줌)
+
+	* nodemon 모듈 설치
+	npm install nodemon -g
+	nodemon "실행 js파일"
+
+	* supervisor 모듈 설치
+	npm install supervisor -g
+	supervisor "실행 js파일"
+	
+* 프로젝트 생성을 위한 express 프레임웍
+
+	* express  설치
+	npm install express -g
+
+//--------------------------
+// express 프로젝트 생성
+//--------------------------
+
+*원하는 경로에서 하위 폴더로 express 프로젝트 생성
+
+	* 생성
+	express "프로젝트 디렉토리"
+
+	* 필요한 의존 모듈 설치 (package.json 파일의 description 항목 참고)
+	cd "프로젝트 디렉토리" && npm install
+	
+	* app 실행 (웹서버 실행)
+	node app
+	
+	* 웹브라우져에서 http://localhost:3000 으로 접속하여 페이지 뜨는것을 확인한다.
+	서버를 멈추려면 콘솔창에서 Ctrl+C를 누른다.
+
+* 현재 하위 폴더에 설치되어 있는 모듈 확인
+	npm list
+
+//--------------------------
+// Socket.io 모듈 설치
+//--------------------------
+
+위 과정을 통해 node_modules 폴더가 생성된 상태에서 다음 명령을 실행한다.
+
+	* socket.io 모듈 설치
+	npm install socket.io -g
+	
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+

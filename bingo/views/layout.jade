@@ -1,0 +1,18 @@
+doctype 5
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+
+		// JQuery 파일 추가
+		script(src="http://code.jquery.com/jquery-1.10.1.min.js")
+		script(src="http://code.jquery.com/jquery-migrate-1.2.1.min.js")
+		//-script(src='http://code.jquery.com/jquery-1.8.2.min.js')
+
+		// socket.io 추가
+		//script(src='/socket.io/socket.io.js')
+		
+		script(src='/javascripts/bingo.js')
+
+	body
+		block content
