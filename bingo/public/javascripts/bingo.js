@@ -45,4 +45,4 @@ $(document).ready(
 
 
 // 게임 종료 기능
-http://archer0001.blog.me/110165803355
+// http://archer0001.blog.me/110165803355
