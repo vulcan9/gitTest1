@@ -4,8 +4,11 @@
  */
 
 var express = require('express')
-	, routes = require('./routes')
+
+	, routes = require('./routes') // ./routes/index 와 같음
 	, user = require('./routes/user')
+	//, main = require('./routes/main')
+	
 	, http = require('http')
 	, path = require('path')
 	, socketio = require('socket.io');
@@ -50,7 +53,7 @@ app.configure(
 );
 
 //--------------------------
-// 라우팅
+//라우팅
 //--------------------------
 
 app.get('/', routes.index);
@@ -62,26 +65,12 @@ app.get('/main', routes.main); // '/main' 으로 접속하면 routes 모듈의 m
 //--------------------------
 
 var server = http.createServer(app);
-server.listen(
-	app.get('port'), 
-	function()
-	{
-		console.log('Express server listening on port ' + app.get('port'));
-	}
-);
-
-// POST 방식 예제
-// http://www.nodebeginner.org/index-kr.html#how-to-not-do-it
-
-// 게임종료 및 채팅 추가
-// http://archer0001.blog.me/110166892672
 
 //--------------------------
 // 소켓 연결
 //--------------------------
 
 var io = socketio.listen(server);
-
 
 ///////////////////////////////////////////////////////
 // 
@@ -98,20 +87,21 @@ var turn_count = 0;
 
 io.sockets.on(
 		'connection',
-		function(socket)
+		function(client)
 		{
 			// 사용자 접속
-			socket.on(
+			client.on(
 					'join',
 					function (data)
 					{
 						var username = data.username;
-						socket.username = username;
+						client.username = username;
 						
-						users[user_count] = {
-								name : username,
-								turn : false
-						};
+						console.log("join : " + user_count + " - " + username);
+						
+						users[user_count] = {};
+						users[user_count].name = username;
+						users[user_count].turn = false;
 						
 						// 사용자 목록(데이터) 업데이트
 						io.sockets.emit('update_users', users);
@@ -121,27 +111,30 @@ io.sockets.on(
 			);
 			
 			// 게임 시작
-			socket.on(
+			client.on(
 					'game_start',
 					function (data)
 					{
 						// 게임 시작을 알림
-						socket.broadcast.emit('game_started', data);
+						client.broadcast.emit('game_started', data);
 						
 						// 처음 순서 지정
+						console.log("처음 순서 지정 - " + turn_count);
+						console.log(users[turn_count]);
+						
 						users[turn_count].turn = true;
 						
 						// 사용자 목록(데이터) 업데이트
-						io.socket.emit('update_users', users);
+						io.sockets.emit('update_users', users);
 					}
 			);
 			
 			// 숫자를 선택할 때 발생되는 이벤트 처리
-			socket.on(
+			client.on(
 					'select',
 					function (data)
 					{
-						socket.broadcast.emit('check_number', data);
+						client.broadcast.emit('check_number', data);
 						
 						// 현재 사용자의 턴 종료
 						users[turn_count].turn = false;
@@ -160,11 +153,11 @@ io.sockets.on(
 			);
 			
 			// 사용자 접속 종료
-			socket.on(
+			client.on(
 					'disconnect',
 					function (data)
 					{
-						delete users[socket.username];
+						delete users[client.username];
 						
 						io.sockets.emit('update_users', users);
 						user_count--;
@@ -173,9 +166,25 @@ io.sockets.on(
 		}
 );
 
+server.listen(
+		app.get('port'), 
+		function()
+		{
+			console.log('* Express server listening on port ' + app.get('port'));
+		}
+	);
 
+	// POST 방식 예제
+	// http://www.nodebeginner.org/index-kr.html#how-to-not-do-it
 
+	// 게임종료 및 채팅 추가
+	// http://archer0001.blog.me/110166892672
 
+console.log('* Server running at http://localhost:'+app.get('port'));
+
+// 브라우져 테스트
+// http://localhost:3000/main?username=test1
+// http://localhost:3000/main?username=test2
 
 
 

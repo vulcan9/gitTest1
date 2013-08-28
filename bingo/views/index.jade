@@ -1,6 +1,5 @@
 extends layout
 
-// 주석달기 샘플
 
 block content
 	h1= title
@@ -8,7 +7,16 @@ block content
 	p
 
 	h2= tagSample
-	h2 !{tagSample}
+	// html 코드가 넘어오는 경우 이스케이프처리하지 않고 출력
+	h2 !{tagSample} 
 
 	p 출력 : #{tagSample}
 	p 출력 : !{tagSample}
+	
+	
+	// 주석문 : 실제 코드에서 주석문을 표현하고 싶지 않을 경우에는  //- 를 사용한다.
+	// 주석달기 샘플1
+	//- 주석달기 샘플2
+	//
+		주석달기 샘플3
+		블럭단위 주석은 들여쓰기로 처리할 수 있다.
