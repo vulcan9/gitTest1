@@ -52,26 +52,50 @@ node_modules 폴더가 없다면 하위에 생성되어 그 아래에 socket.io 
 
 	* socket.io 모듈 설치
 	npm install socket.io -g
-	
+
 ////////////////////////////
-// 프로젝트 구동
+// 프로젝트 구동 (socketServer) : socket 연결, GET 방식 통신 테스트
 ////////////////////////////
 
 터미널의 위치가 프로젝트 폴더에 있는지 확인한다.
 아니라면 이동한다.
 
 	예) d 드라이브 아래에 있는 bingo 프로젝트 폴더로 이동하였다. (master) 라고 표시되는군...
-	vulcan@HOME-PC /d/project/nodeJS/project/bingo (master)
+	vulcan@HOME-PC /d/project/nodeJS/project/socketSample (master)
 
 서버를 구동시킨다.
-	vulcan@HOME-PC /d/project/nodeJS/project/bingo (master)
-	$ nodemon server.js
+	vulcan@HOME-PC /d/project/nodeJS/project/socketSample (master)
+	$ nodemon socketServer.js
 
 브라우져에서 페이지를 확인한다.
-	http://localhost:3000/
+	http://localhost
+	
+소켓서버가 구동된 상태에서 브라우져를 통해 client.html 파일이 열리면 정상적으로 socket 연결이 되었는지  확인하기 위함이다.
+브라우져에서 개발자 도구를 통해 콘솔창을 확인하면 다음 서버에서 보낸 메세지가 출력되는지 확인한다.
+	
+	Object {hello: "world"} 
+	
+////////////////////////////
+// 프로젝트 구동 (socketExpressServer) : socket 연결, POST 방식 통신 테스트
+////////////////////////////
 
+터미널의 위치가 프로젝트 폴더에 있는지 확인한다.
+아니라면 이동한다.
 
+	예) d 드라이브 아래에 있는 bingo 프로젝트 폴더로 이동하였다. (master) 라고 표시되는군...
+	vulcan@HOME-PC /d/project/nodeJS/project/socketSample (master)
 
+서버를 구동시킨다.
+	vulcan@HOME-PC /d/project/nodeJS/project/socketSample (master)
+	$ nodemon socketExpressServer.js
 
+브라우져에서 페이지를 확인한다.
+
+	http://localhost
+	
+client.html 내용이 출력되게 되는데 submit 타이핑 후 submit 버튼을 누르고 콘솔창에서 내용을 확인 한다.
+POST 방식에 서버 호출 결과가 화면에 나타난다.
+
+	Hello Upload : oooooooooo
 */
 

@@ -7679,3 +7679,1554 @@ java.lang.IllegalArgumentException
 !MESSAGE Unexpected runtime error while computing a text hover
 !STACK 0
 java.lang.NullPointerException
+!SESSION 2013-09-01 00:36:48.798 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2013-09-01 00:37:16.919
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-09-01 00:37:16.919
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.MakeHandlersGo@3d299e6a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(com.aptana.ruby.debug.ui.RubyShortcut.debug,Debug Ruby Application,
+		Debug Ruby Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.MakeHandlersGo@775f6084,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-09-01 00:37:16.919
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.MakeHandlersGo@16b9b756,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(com.aptana.ruby.debug.ui.RubyShortcut.run,Run Ruby Application,
+		Run Ruby Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.MakeHandlersGo@7ab37ac1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-09-01 00:37:16.919
+!MESSAGE A conflict occurred for CTRL+SHIFT+D:
+Binding(CTRL+SHIFT+D,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Display,Display,
+		Display result of evaluating selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1d4053d6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(CTRL+SHIFT+D,
+	ParameterizedCommand(Command(com.aptana.ide.syncing.ui.commands.download,Download...,
+		,
+		Category(com.aptana.ide.syncing.ui.commands.category,File Transfer,File Transfer Commands,true),
+		org.eclipse.ui.internal.MakeHandlersGo@6a40159a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+D,
+	ParameterizedCommand(Command(org.radrails.rails.ui.command.debug.server,Debug Server,
+		,
+		Category(org.radrails.rails.ui.category,Rails,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@154a67f5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-09-01 00:37:16.919
+!MESSAGE A conflict occurred for CTRL+SHIFT+U:
+Binding(CTRL+SHIFT+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.occurrences.in.file.quickMenu,Show Occurrences in File Quick Menu,
+		Shows the Occurrences in File quick menu,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		org.eclipse.ui.internal.MakeHandlersGo@47ef10be,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+U,
+	ParameterizedCommand(Command(com.aptana.ide.syncing.ui.commands.upload,Upload...,
+		,
+		Category(com.aptana.ide.syncing.ui.commands.category,File Transfer,File Transfer Commands,true),
+		org.eclipse.ui.internal.MakeHandlersGo@20344ed7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.aptana.git.core 4 0 2013-09-01 00:37:19.826
+!MESSAGE (Build 3.4.1.1364101095) [ERROR] com.aptana.git.core/debug You entered a custom git path in the Preferences pane, but this path is not a valid git v1.6.0 or higher binary. Were going to use the default search paths instead
+
+!ENTRY org.eclipse.debug.ui 4 120 2013-09-01 00:37:27.572
+!MESSAGE org.eclipse.debug.ui.toggleBreakpointsTargetFactory extension failed to load breakpoint toggle target because the specified id is already registered.  Specified ID is: org.chromium.debug.ui.ChromiumToggleBreakpointTargetFactory
+
+!ENTRY org.eclipse.egit.ui 2 0 2013-09-01 00:37:32.502
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface 2 0 2013-09-01 00:37:34.349
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-09-01 00:37:34.349
+!MESSAGE A conflict occurred for ALT+V:
+Binding(ALT+V,
+	ParameterizedCommand(Command(org.eclipse.datatools.enablement.sybase.asa.schemaobjecteditor.examples.tableschemaeditor.pastecolumn,Paste,
+		,
+		Category(org.eclipse.datatools.enablement.sybase.asa.schemaobjecteditor.examples.tableschemaedtor.10x,ASA 9.x table schema editor,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@64eb86de,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+V,
+	ParameterizedCommand(Command(com.aptana.org.eclipse.tm.terminal.command1,Terminal view insert,
+		,
+		Category(com.aptana.org.eclipse.tm.terminal.category1,Terminal view commands,%terminal.view.insertion.description,true),
+		org.eclipse.ui.internal.MakeHandlersGo@22e38c95,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.aptana.org.eclipse.tm.terminal.TerminalContext,,,system)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 00:37:35.691
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.SourceElementParser.notifySourceElementRequestor(SourceElementParser.java:670)
+	at org.eclipse.wst.jsdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1252)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.SourceIndexer.indexDocument(SourceIndexer.java:80)
+	at org.eclipse.wst.jsdt.internal.core.search.JavaSearchParticipant.indexDocument(JavaSearchParticipant.java:78)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.IndexManager.indexDocument(IndexManager.java:351)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.IndexManager$1.execute(IndexManager.java:720)
+	at org.eclipse.wst.jsdt.internal.core.search.processing.JobManager.run(JobManager.java:393)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 00:37:38.418
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.SourceElementParser.notifySourceElementRequestor(SourceElementParser.java:670)
+	at org.eclipse.wst.jsdt.internal.compiler.SourceElementParser.parseCompilationUnit(SourceElementParser.java:1252)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.SourceIndexer.indexDocument(SourceIndexer.java:80)
+	at org.eclipse.wst.jsdt.internal.core.search.JavaSearchParticipant.indexDocument(JavaSearchParticipant.java:78)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.IndexManager.indexDocument(IndexManager.java:351)
+	at org.eclipse.wst.jsdt.internal.core.search.indexing.IndexManager$1.execute(IndexManager.java:720)
+	at org.eclipse.wst.jsdt.internal.core.search.processing.JobManager.run(JobManager.java:393)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.jface 2 0 2013-09-01 00:42:32.089
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-09-01 00:42:32.089
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.wst.jsdt.ui.category.source,Source,JavaScript Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@64938705,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(com.aptana.editor.commands.Format,Format,
+		Format the selected text,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@aa1bfbd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.aptana.editor.context,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-09-01 00:42:32.089
+!MESSAGE A conflict occurred for CTRL+O:
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@11858cd9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+Binding(CTRL+O,
+	ParameterizedCommand(Command(com.aptana.editor.js.quick_outline,Quick Outline,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.MakeHandlersGo@56e2038b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.aptana.editor.context,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-09-01 00:42:32.090
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1056c73d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(com.aptana.editor.common.gotoMatchingBracket,Goto Matching Bracket,
+		Goto Matching Bracket,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.MakeHandlersGo@31327e2c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.aptana.editor.context,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-09-01 00:42:32.090
+!MESSAGE A conflict occurred for ALT+SHIFT+O:
+Binding(ALT+SHIFT+O,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.toggleMarkOccurrences,Toggle Mark Occurrences,
+		Toggles mark occurrences in JavaScript editors,
+		Category(org.eclipse.wst.jsdt.ui.category.source,Source,JavaScript Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@69f993ef,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+O,
+	ParameterizedCommand(Command(com.aptana.editor.common.toggleMarkOccurrences,Mark Occurrences,
+		Toggle mark occurrences,
+		Category(com.aptana.ui.category,Aptana,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@5f6644,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.aptana.editor.context,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-09-01 00:42:32.090
+!MESSAGE A conflict occurred for F3:
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.open.editor,Open Declaration,
+		Open an editor on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@7732fa8c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,Open Declaration,
+		Open an editor on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@33df3a77,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javascriptViewScope,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(com.aptana.editor.js.openDeclaration,Open Declaration,
+		Open a selected JS element's declaration,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@477753c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.aptana.scripting.context,,,system)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 01:29:38.312
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.addUnitsContainingBindings(LookupEnvironment.java:179)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:374)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:320)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:316)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:237)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getType(Scope.java:1876)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.resolveType(InferredType.java:319)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.SourceTypeBinding.buildFields(SourceTypeBinding.java:120)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.SourceTypeBinding.buildFieldsAndMethods(SourceTypeBinding.java:76)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildFieldsAndMethods(CompilationUnitScope.java:186)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:393)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:443)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:435)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:240)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve0(LocalDeclaration.java:167)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:140)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 01:29:49.863
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.addUnitsContainingBindings(LookupEnvironment.java:179)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:374)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:320)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:316)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:237)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getType(Scope.java:1876)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.resolveType(InferredType.java:319)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.SourceTypeBinding.buildFields(SourceTypeBinding.java:120)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.SourceTypeBinding.buildFieldsAndMethods(SourceTypeBinding.java:76)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildFieldsAndMethods(CompilationUnitScope.java:186)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:393)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:443)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:435)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:240)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve0(LocalDeclaration.java:167)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:140)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:497)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jface.text 4 0 2013-09-01 03:31:27.156
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:669)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:674)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:387)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:443)
+	at org.eclipse.wst.jsdt.internal.core.CompilationUnitProblemFinder.accept(CompilationUnitProblemFinder.java:174)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:279)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:132)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.getType(LookupEnvironment.java:766)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.getResolvedType(LookupEnvironment.java:720)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getJavaLangString(Scope.java:1745)
+	at org.eclipse.wst.jsdt.core.dom.DefaultBindingResolver.resolveExpressionType(DefaultBindingResolver.java:604)
+	at org.eclipse.wst.jsdt.core.dom.Expression.resolveTypeBinding(Expression.java:111)
+	at org.eclipse.wst.jsdt.internal.corext.refactoring.nls.NLSHintHelper.getAccessorClassReference(NLSHintHelper.java:97)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.NLSStringHover.getHoverInfo(NLSStringHover.java:96)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getHoverInfo2(AbstractJavaEditorTextHover.java:95)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:147)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:78)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:46:26.560
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getType(Scope.java:1876)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.resolveSuperType(InferredType.java:370)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.findInferredSupertype(ClassScope.java:726)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectSuperclass(ClassScope.java:483)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectTypeHierarchy(ClassScope.java:595)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:669)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:674)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:387)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:443)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:435)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:240)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.SingleNameReference.findBinding(SingleNameReference.java:478)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:340)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:275)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.BinaryExpression.resolveType(BinaryExpression.java:263)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Expression.resolve(Expression.java:477)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:46:27.822
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getType(Scope.java:1876)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.resolveSuperType(InferredType.java:370)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.findInferredSupertype(ClassScope.java:726)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectSuperclass(ClassScope.java:483)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectTypeHierarchy(ClassScope.java:595)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:669)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:674)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:387)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:443)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:435)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:240)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.SingleNameReference.findBinding(SingleNameReference.java:478)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:340)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:275)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.BinaryExpression.resolveType(BinaryExpression.java:263)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Expression.resolve(Expression.java:477)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:46:29.231
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getType(Scope.java:1876)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.resolveSuperType(InferredType.java:370)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.findInferredSupertype(ClassScope.java:726)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectSuperclass(ClassScope.java:483)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectTypeHierarchy(ClassScope.java:595)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:669)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:674)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:387)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:443)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:435)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:240)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.SingleNameReference.findBinding(SingleNameReference.java:478)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:340)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:275)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.BinaryExpression.resolveType(BinaryExpression.java:263)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Expression.resolve(Expression.java:477)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:46:30.222
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getType(Scope.java:1876)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.resolveSuperType(InferredType.java:370)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.findInferredSupertype(ClassScope.java:726)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectSuperclass(ClassScope.java:483)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectTypeHierarchy(ClassScope.java:595)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:669)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:674)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:387)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:443)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:435)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:240)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.SingleNameReference.findBinding(SingleNameReference.java:478)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:340)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:275)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.BinaryExpression.resolveType(BinaryExpression.java:263)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Expression.resolve(Expression.java:477)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:46:33.323
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getType(Scope.java:1876)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.resolveSuperType(InferredType.java:370)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.findInferredSupertype(ClassScope.java:726)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectSuperclass(ClassScope.java:483)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectTypeHierarchy(ClassScope.java:595)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:669)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:674)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:387)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:443)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:435)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:240)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.SingleNameReference.findBinding(SingleNameReference.java:478)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:340)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:275)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.BinaryExpression.resolveType(BinaryExpression.java:263)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Expression.resolve(Expression.java:477)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:497)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:46:37.060
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getType(Scope.java:1876)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.resolveSuperType(InferredType.java:370)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.findInferredSupertype(ClassScope.java:726)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectSuperclass(ClassScope.java:483)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectTypeHierarchy(ClassScope.java:595)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:669)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:674)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:387)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:443)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:435)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:240)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.SingleNameReference.findBinding(SingleNameReference.java:478)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:340)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:275)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.BinaryExpression.resolveType(BinaryExpression.java:263)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Expression.resolve(Expression.java:477)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:497)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:46:46.511
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getType(Scope.java:1876)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.resolveSuperType(InferredType.java:370)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.findInferredSupertype(ClassScope.java:726)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectSuperclass(ClassScope.java:483)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectTypeHierarchy(ClassScope.java:595)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:669)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:674)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:387)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:443)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:435)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:240)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.SingleNameReference.findBinding(SingleNameReference.java:478)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:340)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:275)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.BinaryExpression.resolveType(BinaryExpression.java:263)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Expression.resolve(Expression.java:477)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:497)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:46:52.435
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getType(Scope.java:1876)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.resolveSuperType(InferredType.java:370)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.findInferredSupertype(ClassScope.java:726)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectSuperclass(ClassScope.java:483)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectTypeHierarchy(ClassScope.java:595)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:669)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:674)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:387)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:443)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:435)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:240)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.SingleNameReference.findBinding(SingleNameReference.java:478)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:340)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:275)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.BinaryExpression.resolveType(BinaryExpression.java:263)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Expression.resolve(Expression.java:477)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:46:53.556
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getType(Scope.java:1876)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.resolveSuperType(InferredType.java:370)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.findInferredSupertype(ClassScope.java:726)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectSuperclass(ClassScope.java:483)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.ClassScope.connectTypeHierarchy(ClassScope.java:595)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:669)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:674)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:387)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:443)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:435)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:240)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.SingleNameReference.findBinding(SingleNameReference.java:478)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:340)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.FieldReference.resolveType(FieldReference.java:275)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.BinaryExpression.resolveType(BinaryExpression.java:263)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Expression.resolve(Expression.java:477)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:46:55.771
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.addUnitsContainingBindings(LookupEnvironment.java:179)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:374)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:320)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:316)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:237)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve0(LocalDeclaration.java:167)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:140)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:47:07.763
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.addUnitsContainingBindings(LookupEnvironment.java:179)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:374)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:320)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:316)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:237)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve0(LocalDeclaration.java:167)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:140)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:497)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:47:13.802
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.addUnitsContainingBindings(LookupEnvironment.java:179)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:374)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:320)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:316)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:237)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve0(LocalDeclaration.java:167)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:140)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:47:18.750
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.addUnitsContainingBindings(LookupEnvironment.java:179)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:374)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:320)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:316)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:237)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve0(LocalDeclaration.java:167)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:140)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:497)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:47:20.912
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.addUnitsContainingBindings(LookupEnvironment.java:179)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:374)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:320)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:316)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:237)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve0(LocalDeclaration.java:167)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:140)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:497)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:47:23.066
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.addUnitsContainingBindings(LookupEnvironment.java:179)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:374)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:320)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:316)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:237)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve0(LocalDeclaration.java:167)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:140)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:497)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:47:30.241
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.addUnitsContainingBindings(LookupEnvironment.java:179)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:374)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:320)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:316)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:237)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve0(LocalDeclaration.java:167)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:140)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:497)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:47:31.357
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.addUnitsContainingBindings(LookupEnvironment.java:179)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:374)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:320)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:316)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:237)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve0(LocalDeclaration.java:167)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:140)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:47:33.838
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.addUnitsContainingBindings(LookupEnvironment.java:179)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:374)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:320)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:316)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:237)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve0(LocalDeclaration.java:167)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:140)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:47:37.589
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.addUnitsContainingBindings(LookupEnvironment.java:179)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:374)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:320)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:316)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:237)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve0(LocalDeclaration.java:167)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:140)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:47:38.773
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.addUnitsContainingBindings(LookupEnvironment.java:179)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:374)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:320)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:316)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:237)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve0(LocalDeclaration.java:167)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:140)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:47:44.820
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.addUnitsContainingBindings(LookupEnvironment.java:179)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:374)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:320)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:316)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:237)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve0(LocalDeclaration.java:167)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:140)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:47:47.007
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.addUnitsContainingBindings(LookupEnvironment.java:179)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:374)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:320)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:316)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:237)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve0(LocalDeclaration.java:167)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:140)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:497)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2013-09-01 03:47:47.885
+!MESSAGE error during type inferencing
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.core.infer.InferredAttribute.<init>(InferredAttribute.java:59)
+	at org.eclipse.wst.jsdt.core.infer.InferredType.addAttribute(InferredType.java:125)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.populateType(InferEngine.java:1327)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.handlePotentialType(InferEngine.java:925)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.visit(InferEngine.java:328)
+	at org.eclipse.wst.jsdt.internal.compiler.DelegateASTVisitor.visit(DelegateASTVisitor.java:526)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.Assignment.traverse(Assignment.java:224)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:584)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.traverse(CompilationUnitDeclaration.java:539)
+	at org.eclipse.wst.jsdt.core.infer.InferEngine.doInfer(InferEngine.java:1772)
+	at org.eclipse.wst.jsdt.internal.compiler.parser.Parser.inferTypes(Parser.java:7093)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:231)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.addUnitsContainingBindings(LookupEnvironment.java:179)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.buildTypeBindings(CompilationUnitScope.java:374)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:320)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.buildTypeBindings(LookupEnvironment.java:316)
+	at org.eclipse.wst.jsdt.internal.compiler.Compiler.accept(Compiler.java:237)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.accept(JavaScriptUnitResolver.java:168)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:282)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.PackageBinding.getTypeOrPackage(PackageBinding.java:249)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getTypeOrPackage(Scope.java:2105)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getBinding(Scope.java:1088)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve0(LocalDeclaration.java:167)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:140)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.LocalDeclaration.resolve(LocalDeclaration.java:142)
+	at org.eclipse.wst.jsdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:394)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:900)
+	at org.eclipse.wst.jsdt.core.dom.JavaScriptUnitResolver.resolve(JavaScriptUnitResolver.java:568)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:862)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:647)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider$1.run(ASTProvider.java:581)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.createAST(ASTProvider.java:574)
+	at org.eclipse.wst.jsdt.internal.ui.javaeditor.ASTProvider.getAST(ASTProvider.java:509)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$PartListenerGroup.calculateASTandInform(SelectionListenerWithASTManager.java:149)
+	at org.eclipse.wst.jsdt.internal.ui.viewsupport.SelectionListenerWithASTManager$3.run(SelectionListenerWithASTManager.java:134)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)

@@ -26,35 +26,103 @@ app.configure(
 		app.set('port', process.env.PORT || 3000); // 포트 설정
 		app.set('views', __dirname + '/views'); // 뷰 디렉토리 설정
 		app.set('view engine', 'jade'); // 뷰 엔진 설정(ejs, Jade)
-
+		
+		/* Express 설정
+		basepath : res.redirect()에서 사용되는 애플리케이션의 기본 경로가 되며 마운트되는 애플리케이션을 투명하게 처리합니다.
+		views : CWD/views를 규정하는 뷰 파일의 라우트 경로를 정의합니다.
+		view engine : 뷰에 사용될 기본 뷰 엔진의 이름을 정의합니다.
+		view options : 뷰 전체 옵션을 지정하는 개체입니다.
+		view cache : 뷰 캐싱을 활성화합니다(production 모드에서만 유효)
+		case sensitive routes : 케이스에 민감한 라우팅을 사용합니다.
+		strict routing : When enabled trailing slashes are no longer ignored
+		jsonp callback : Enable res.send() / res.json() transparent jsonp support
+		*/
+		
 		app.use(express.favicon());
 		app.use(express.logger('dev'));
+		
+		// bodyParser 미들웨어를 사용하여 JSON을(또는 다른 데이터) 파싱하고 바디에 반환하는 방법입니다. 
+		// 결과값은 req.body에 저장합니다:
 		app.use(express.bodyParser());
 		app.use(express.methodOverride());
-		app.use(app.router); // 라우터 설정(요청에 따라 응답을 결정)
+		
+		app.use(app.router); // 라우터 설정(요청에 따라 응답을 결정). 이것을 사용하지 않으면 첫 번째 app.get()과 app.post() 등의 호출 경로를 마운트합니다.
 		app.use(express.static(path.join(__dirname, 'public'))); // 정적 디렉토리 설정
 	}
 );
 
 /*
-// development only
+app.configure(
+	'development',
+	function()
+	{
+		app.use(express.static(__dirname + '/public'));
+		app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
+		app.use(express.errorHandler());
+	}
+);
+
+app.configure(
+	'production', 
+	function()
+	{
+		var oneYear = 31557600000;
+		app.use(express.static(__dirname + '/public', { maxAge: oneYear }));
+		app.use(express.errorHandler());
+	}
+);
+
+// 유사한 방법으로 사용자가 임의로 설정한 문자열을 사용하여 여러가지 환경을 만들수 있습니다:
+app.configure(
+	'stage', 'prod', 
+	function(){
+		// config
+	}
+);
+*/
+
+// 쉘에서 구동시킬때 입력
+//$ NODE_ENV = production node app.js
+
+/*
+//development only
 if ('development' == app.get('env'))
 {
 	app.use(express.errorHandler());
 }
 */
 
-app.configure(
-	'development',
-	function()
-	{
-		app.use(express.errorHandler());
-	}
-);
-
 //--------------------------
 //라우팅
 //--------------------------
+
+/*
+Express의 라우팅 API는 HTTP 의미를 가지고있는 동사에 기초하였습니다. 
+예를 들어 /users/12라는 경로는 사용자 계정정보를 표시할 때 다음과 같이 처리합니다. 
+app.get()의 첫 번째 인수에있는 ":id" 플레이스홀더는 req.params 값으로 연결됩니다:
+
+app.get(
+	'/user/:id', // http://dev:3000/users/12
+	function(req, res)
+	{
+		res.send('user ' + req.params.id);
+	}
+);
+
+이 라우팅은 내부에서 정규식(RegExp)으로 컴파일됩니다. 
+예를 들어 /user/:id는 다음과 같은 정규식으로 컴파일됩니다 : \/users\/([^\/]+)\/?
+
+더 복잡한 용도로 정규식 리터럴을 직접 전달할 수도 있습니다. 
+정규식 리터럴의 캡처 그룹은 req.params에서 직접 결과를 받을수 있습니다. 
+첫 번째 캡처 그룹은 req.params[0]가 되고, 계속 두 번째는 req.params[1]과 같은 상태가됩니다:
+
+app.get(
+	/^\/users?(?:\/(\d+)(?:\.\.(\d+))?)?/, 
+	function(req, res){
+    	res.send(req.params);
+	}
+);
+*/
 
 app.get('/', routes.index);
 app.get('/users', user.list);
