@@ -5,7 +5,9 @@
 
 var express = require('express')
 
-	, routes = require('./routes') // ./routes/index 와 같음
+	// ./routes/index.js 와 같음
+	, routes = require('./routes')
+	// ./routes/user.js 와 같음
 	, user = require('./routes/user')
 	//, main = require('./routes/main')
 	
@@ -25,7 +27,11 @@ app.configure(
 	{
 		app.set('port', process.env.PORT || 3000); // 포트 설정
 		app.set('views', __dirname + '/views'); // 뷰 디렉토리 설정
+		
+		// 기본적으로 템플릿 엔진은 템플릿을 통해 렌더링된 내용을 body 변수에 담아 layout.[템플릿엔진명]으로 전달하게 된다.
 		app.set('view engine', 'jade'); // 뷰 엔진 설정(ejs, Jade)
+		// layout을 전역적으로 쓰지 않음
+		//app.set('view options', { layout:false });
 		
 		/* Express 설정
 		basepath : res.redirect()에서 사용되는 애플리케이션의 기본 경로가 되며 마운트되는 애플리케이션을 투명하게 처리합니다.
@@ -127,6 +133,7 @@ app.get(
 app.get('/', routes.index);
 app.get('/users', user.list);
 app.get('/main', routes.main); // '/main' 으로 접속하면 routes 모듈의 main()메서드가 실행되도록함
+app.get('/html', routes.htmlRender);
 
 //--------------------------
 // 서버 생성

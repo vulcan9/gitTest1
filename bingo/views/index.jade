@@ -1,18 +1,39 @@
-extends layout
+doctype 5
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+
+		// JQuery 파일 추가
+		//script(src="http://code.jquery.com/jquery-1.10.1.min.js")
+		//script(src="http://code.jquery.com/jquery-migrate-1.2.1.min.js")
+		script(src='http://code.jquery.com/jquery-1.8.2.min.js')
+
+		// socket.io 추가
+		script(src='/socket.io/socket.io.js')
+		
+		script(src='/javascripts/bingo.js')
+
 
 
 block content
-	h1= title
-	p Welcome to #{title}
+	h1= query.id
+	p Welcome to : #{query.id}
 	p
 
-	h2= tagSample
+	h2 Object 출력------------
 	// html 코드가 넘어오는 경우 이스케이프처리하지 않고 출력
-	h2 !{tagSample} 
+	h2 !{data.title} 
 
-	p 출력 : #{tagSample}
-	p 출력 : !{tagSample}
+	p 출력 : #{data.tagSample}
+	p 출력 : !{data.tagSample}
 	
+	h2 Json 출력------------
+	- json = JSON.parse(json);
+	h2 #{json.title} 
+
+	p 출력 : #{json.tagSample}
+	p 출력 : !{json.tagSample}
 	
 	// 주석문 : 실제 코드에서 주석문을 표현하고 싶지 않을 경우에는  //- 를 사용한다.
 	// 주석달기 샘플1
