@@ -50,7 +50,7 @@
 		tel : "0123456789",
 		email : "anemail@me.com",
 		type : "family"
-	} ]
+	} ];
 
 	////////////////////////////////
 	// Models
@@ -204,7 +204,10 @@
 		
 		getTypes : function()
 		{
-			return _.uniq(this.collection.pluck("type"));
+			var types = this.collection.pluck("type");
+			console.log(types);
+			console.log(_.uniq(types));
+			return _.uniq(types);
 		},
 		
 		//add ui events
@@ -225,22 +228,29 @@
 			if (this.filterType === "all")
 			{
 				this.collection.reset(contacts);
+				
+				// URL을 교체해준다
+				// 이때 라우터의 urlFilter메서드는 실행되지 않는다.
 				contactsRouter.navigate("filter/all");
 			}
 			else
 			{
 				this.collection.reset(contacts, {
+					// "reset" 이벤트가 발생하는 것을 방지
 					silent : true
 				});
 				
-				var filterType = this.filterType, filtered = _.filter(
+				var filterType = this.filterType
+				, filtered = _.filter(
 						this.collection.models, function(item)
 						{
 							return item.get("type") === filterType;
 						});
 				
 				this.collection.reset(filtered);
-				
+
+				// URL을 교체해준다
+				// 이때 라우터의 urlFilter메서드는 실행되지 않는다.
 				contactsRouter.navigate("filter/" + filterType);
 			}
 		}
@@ -251,6 +261,7 @@
 	
 	//add routing
 	var ContactsRouter = Backbone.Router.extend({
+		// URL을 이용하여 접근하는 경우에 urlFilter에 의해 View가 갱신된다.
 		routes : {
 			"filter/:type" : "urlFilter"
 		},
