@@ -1,0 +1,160 @@
+body div{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline: 0px;
+/*
+	vertical-align: baseline;
+	background: transparent;
+	display: block;
+*/
+
+	*font-family: "Helvetica Neue","HelveticaNeueW01-55Roma","HelveticaNeueW02-55Roma","HelveticaNeueW10-55Roma",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	color: #404040;
+}
+
+/*////////////////////////////////
+// Ruler
+////////////////////////////////*/
+
+.rulerContainer {
+	opacity: 0.5;
+}
+
+.rulerContainer .scaleNumbers{
+	position: absolute
+}
+.rulerContainer .scaleNumber {
+	position: absolute;
+	font-size: 6pt;
+	pointer-events: none;
+}
+
+.rulerContainer .rulerGuides{
+	position: absolute;
+}
+
+/* snap 가이드라인*/
+.rulerContainer .rulerGuides2{
+	position: absolute;
+}
+
+/*가이드라인 추가*/
+.rulerGuides .rulerGuide{
+	position: absolute;
+	visibility: visible;
+}
+
+/*-----------------------
+가로방향 룰러
+------------------------*/
+
+.rulerHoriztal {
+	position: fixed;
+	display: inline-block;
+	visibility: visible;
+	width: 100%;
+	left: 0px;
+	height: 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	/*border-bottom-color: rgb(0, 0, 0);*/
+	border-bottom-color: #888;
+	top: 0px;
+
+	text-align: left;
+}
+
+.rulerHoriztal .rulderBackground {
+	position: absolute;
+	background-image: url(../../css/ruler/EditorRulerBG-H.png);
+	background-repeat: repeat no-repeat;
+	left: 0px;
+	top: 0px;
+	height: 20px;
+	width: 100%;
+	/*background-position: 212px -2px;*/
+}
+.rulerHoriztal .rulerGuide .guideHandle {
+	position: absolute;
+	background-image: url(../../css/ruler/EditorRulerBG-H.png);
+	background-position: 0px 18px;
+	background-repeat: initial initial;
+	top: 12px;
+	left: -6px;
+	width: 13px;
+	height: 18px;
+}
+
+.rulerHoriztal .rulerGuide .guideLine {
+	position: absolute;
+	top: 31px;
+	left: -2px;
+	width: 5px;
+	height: 3000px;
+	cursor: e-resize;
+	background-image: url(../../css/ruler/guideHbg.png);
+	background-position: initial initial;
+	background-repeat: no-repeat repeat;
+}
+
+/*-----------------------
+세로방향 룰러
+------------------------*/
+
+.rulerVertical {
+	position: fixed;
+	display: inline-block;
+	visibility: visible;
+
+	width: 20px;
+	height: 100%;
+	border-left-width: 1px;
+	border-left-style: solid;
+	/*border-left-color: rgb(0, 0, 0);*/
+	border-left-color: #888;
+	top: 0px;
+	right: 0px;
+
+	text-align: right;
+}
+
+.rulerVertical .rulderBackground {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 100%;
+	width: 20px;
+	background-image: url(../../css/ruler/EditorRulerBG-V.png);
+	background-repeat: no-repeat repeat;
+	/*background-position: -19px -20px;*/
+}
+
+.rulerVertical .rulerGuide .guideHandle {
+	position: absolute;
+	background-image: url(../../css/ruler/EditorRulerBG-V.png);
+	background-position: 0px 0px;
+	background-repeat: initial initial;
+	top: -6px;
+	right: -6px;
+	width: 18px;
+	height: 13px;
+}
+
+.rulerVertical .rulerGuide .guideLine {
+	position: absolute;
+	top: -2px;
+	right: 11px;
+	width: 3000px;
+	height: 5px;
+	cursor: s-resize;
+	background-image: url(../../css/ruler/guideVbg.png);
+	background-position: initial initial;
+	background-repeat: repeat no-repeat;
+}
+
+
+
+
+

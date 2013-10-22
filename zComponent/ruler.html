@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+
+        <!-- The stylesheets -->
+
+        <!--룰러-->
+        <link rel="stylesheet" href="css/ruler/ruler.css" type="text/css"/>
+
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+
+    <body>
+
+
+
+
+<!--
+가이드 룰러
+참고 : http://editor.wix.com/html/editor/web/renderer/new?siteId=f1c90ac2-ae2a-4ef3-b958-be66171b570e&metaSiteId=12d8d5f6-72cd-c992-a0dd-abb921df022b&editorSessionId=85B04C49-95EC-4386-A2E0-3A0572C79D4D
+-->
+
+
+
+
+
+<div class="rulerContainer">
+    <div class="rulerHoriztal">
+
+        <!--
+        x원점을 200으로 설정됨
+        rulderBackground, scaleNumbers, rulerGuides, rulerGuides2의 left를 함께 수정해주어야함
+        -->
+        <div class="rulderBackground" style="background-position: 200px -2px;"></div>
+
+        <div class="scaleNumbers" style="left: 200px;top: 0px;height: 20px;width: 100%;">
+            <div class="scaleNumber" style="left: 3px;">0</div>
+            <div class="scaleNumber" style="left: 103px;">100</div>
+            <div class="scaleNumber" style="left: 203px;">200</div>
+            <div class="scaleNumber" style="left: 303px;">300</div>
+            <div class="scaleNumber" style="left: 403px;">400</div>
+            <div class="scaleNumber" style="left: 503px;">500</div>
+            <div class="scaleNumber" style="left: 603px;">600</div>
+            <div class="scaleNumber" style="left: 703px;">700</div>
+            <div class="scaleNumber" style="left: 803px;">800</div>
+            <div class="scaleNumber" style="left: 903px;">900</div>
+        </div>
+
+        <!--가이드 라인 추가 공간-->
+        <div class="rulerGuides" style="left: 200px;">
+
+            <!--가이드 라인 추가-->
+            <div class="rulerGuide" style="left: 300px; top: 0px;">
+                <div class="guideHandle"></div>
+                <div class="guideLine"></div>
+            </div>
+
+
+        </div>
+
+        <!--가이드 라인2 (snap) -->
+        <div class="rulerGuides2" style="left: 200px;"></div>
+
+
+    </div>
+</div>
+
+
+<div class="rulerContainer">
+    <div class="rulerVertical">
+
+        <!--
+        y원점을 100으로 설정됨
+         원점으로 잡으려면 0 or -20 (horizontal Ruler의 높이)으로 설정한다.
+        rulderBackground, scaleNumbers, rulerGuides, rulerGuides2의 top를 함께 수정해주어야함
+
+         스크롤 될때 position 속성등을 이용하지말고 직접 ackground-position 및 top 속성을 바꿔준다.
+        (캔버스 위치값 이용)
+        -->
+        <div class="rulderBackground" style="background-position: -20px 0px;"></div>
+
+        <div class="scaleNumbers" style="right: 0px; top: 0px; height: 100%; width: 20px;">
+            <div class="scaleNumber" style="top: 1px; left: 2px;">0</div>
+            <div class="scaleNumber" style="top: 101px; left: 2px;">100</div>
+            <div class="scaleNumber" style="top: 201px; left: 2px;">200</div>
+            <div class="scaleNumber" style="top: 301px; left: 2px;">300</div>
+            <div class="scaleNumber" style="top: 401px; left: 2px;">400</div>
+            <div class="scaleNumber" style="top: 501px; left: 2px;">500</div>
+            <div class="scaleNumber" style="top: 601px; left: 2px;">600</div>
+            <div class="scaleNumber" style="top: 701px; left: 2px;">700</div>
+            <div class="scaleNumber" style="top: 801px; left: 2px;">800</div>
+            <div class="scaleNumber" style="top: 901px; left: 2px;">900</div>
+            <div class="scaleNumber" style="top: 1001px; left: 2px;">1000</div>
+            <div class="scaleNumber" style="top: 1101px; left: 2px;">1100</div>
+            <div class="scaleNumber" style="top: 1201px; left: 2px;">1200</div>
+            <div class="scaleNumber" style="top: 1301px; left: 2px;">1300</div>
+            <div class="scaleNumber" style="top: 1401px; left: 2px;">1400</div>
+            <div class="scaleNumber" style="top: 1501px; left: 2px;">1500</div>
+            <div class="scaleNumber" style="top: 1601px; left: 2px;">1600</div>
+            <div class="scaleNumber" style="top: 1701px; left: 2px;">1700</div>
+            <div class="scaleNumber" style="top: 1801px; left: 2px;">1800</div>
+            <div class="scaleNumber" style="top: 1901px; left: 2px;">1900</div>
+            <div class="scaleNumber" style="top: 2001px; left: 2px;">2000</div>
+            <div class="scaleNumber" style="top: 2101px; left: 2px;">2100</div>
+            <div class="scaleNumber" style="top: 2201px; left: 2px;">2200</div>
+            <div class="scaleNumber" style="top: 2301px; left: 2px;">2300</div>
+            <div class="scaleNumber" style="top: 2401px; left: 2px;">2400</div>
+            <div class="scaleNumber" style="top: 2501px; left: 2px;">2500</div>
+            <div class="scaleNumber" style="top: 2601px; left: 2px;">2600</div>
+            <div class="scaleNumber" style="top: 2701px; left: 2px;">2700</div>
+            <div class="scaleNumber" style="top: 2801px; left: 2px;">2800</div>
+            <div class="scaleNumber" style="top: 2901px; left: 2px;">2900</div>
+            <div class="scaleNumber" style="top: 3001px; left: 2px;">3000</div>
+            <div class="scaleNumber" style="top: 3101px; left: 2px;">3100</div>
+            <div class="scaleNumber" style="top: 3201px; left: 2px;">3200</div>
+            <div class="scaleNumber" style="top: 3301px; left: 2px;">3300</div>
+            <div class="scaleNumber" style="top: 3401px; left: 2px;">3400</div>
+            <div class="scaleNumber" style="top: 3501px; left: 2px;">3500</div>
+            <div class="scaleNumber" style="top: 3601px; left: 2px;">3600</div>
+            <div class="scaleNumber" style="top: 3701px; left: 2px;">3700</div>
+            <div class="scaleNumber" style="top: 3801px; left: 2px;">3800</div>
+            <div class="scaleNumber" style="top: 3901px; left: 2px;">3900</div>
+            <div class="scaleNumber" style="top: 4001px; left: 2px;">4000</div>
+            <div class="scaleNumber" style="top: 4101px; left: 2px;">4100</div>
+            <div class="scaleNumber" style="top: 4201px; left: 2px;">4200</div>
+            <div class="scaleNumber" style="top: 4301px; left: 2px;">4300</div>
+            <div class="scaleNumber" style="top: 4401px; left: 2px;">4400</div>
+            <div class="scaleNumber" style="top: 4501px; left: 2px;">4500</div>
+            <div class="scaleNumber" style="top: 4601px; left: 2px;">4600</div>
+            <div class="scaleNumber" style="top: 4701px; left: 2px;">4700</div>
+            <div class="scaleNumber" style="top: 4801px; left: 2px;">4800</div>
+            <div class="scaleNumber" style="top: 4901px; left: 2px;">4900</div>
+            <div class="scaleNumber" style="top: 5001px; left: 2px;">5000</div>
+        </div>
+
+
+        <!--가이드 라인 추가 공간-->
+        <div class="rulerGuides" style="top: 0px;">
+
+            <!--가이드 라인 추가-->
+            <div class="rulerGuide" style="top: 178px; top: 50px;">
+                <div class="guideHandle"></div>
+                <div class="guideLine"></div>
+            </div>
+
+
+        </div>
+
+        <!--가이드 라인2 (snap) -->
+        <div class="rulerGuides2" style="top: 0px;"></div>
+
+    </div>
+
+
+</div>
+
+<!--
+</div>
+-->
+
+
+    </body>
+</html>

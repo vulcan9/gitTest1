@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+
+        <!-- The stylesheets -->
+        <link rel="stylesheet" href="css/canvas/jquery-ui.css" type="text/css">
+        <link rel="stylesheet" href="css/canvas/style.1.2.css" type="text/css"/>
+        <link rel="stylesheet" href="css/canvas/component.css" type="text/css"/>
+
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+
+
+
+<style type="text/css" >
+svg {
+    /*
+    position: absolute;
+    z-index: 1;
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -o-transform-origin: top left;
+
+    -webkit-transform: scale(0.25);
+    -moz-transform: scale(0.25);
+    -o-transform: scale(0.25);
+    */
+
+    -ms-transform-origin: top left;
+    -ms-transform: scale(0.5);
+}
+</style>
+
+    </head>
+
+    <!--
+    참고 : https://wireframe.cc/
+    -->
+
+    <body>
+
+<div class="supercanvas">
+
+
+
+
+<div id="canvas-wrap" class="browser-wrap ui-resizable ui-draggable" snappy="0" data-grid="graph"
+    style="left: 203.5px; margin-left: 0px;">
+
+
+
+        <div id="canvas" class="ui-boxer">
+
+            <div id="grid-div" style="width:100%;height:100%;overflow:hidden;">
+
+                <svg id="svg-grid" zoomAndPan="disable" currentscale="2" xmlns="http://www.w3.org/2000/svg" version="1.2" width="3000" height="12000">
+                    <pattern id="grid-pattern" patternUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+                        <g id="sharp" transform="translate(-0.5,-0.5)">
+                            <line class="lineH" x1="0" x2="100" y1="20" y2="20" stroke="#eee" stroke-width="1"></line>
+                            <line class="lineH" x1="0" x2="100" y1="40" y2="40" stroke="#eee" stroke-width="1"></line>
+                            <line class="lineH" x1="0" x2="100" y1="60" y2="60" stroke="#eee" stroke-width="1"></line>
+                            <line class="lineH" x1="0" x2="100" y1="80" y2="80" stroke="#eee" stroke-width="1"></line>
+                            <line class="lineV" x1="20" x2="20" y1="0" y2="100" stroke="#eee" stroke-width="1"></line>
+                            <line class="lineV" x1="40" x2="40" y1="0" y2="100" stroke="#eee" stroke-width="1"></line>
+                            <line class="lineV" x1="60" x2="60" y1="0" y2="100" stroke="#eee" stroke-width="1"></line>
+                            <line class="lineV" x1="80" x2="80" y1="0" y2="100" stroke="#eee" stroke-width="1"></line>
+                            <line class="lineV" x1="100" x2="100" y1="0" y2="100" stroke="#e1e1e1" stroke-width="1"></line>
+                            <line class="lineH" x1="0" x2="100" y1="100" y2="100" stroke="#e1e1e1" stroke-width="1"></line>
+                        </g>
+                    </pattern><rect id="grid" fill="url(#grid-pattern)" width="3000" height="12000"></rect>
+                </svg>
+
+            </div>
+
+            <div id="guide-h" class="guide" style="top: 240px; display: block;"></div>
+            <div id="guide-v" class="guide" style="left: 460px; display: block;"></div>
+
+            <div class="wire ui-draggable ui-resizable ui-resizable-autohide" style="top: 100px; left: 460px; width: 221px; height: 141px;" aria-disabled="false">
+                <div style="top: 0px !important; left: 0px !important; height: 139px; width: 219px; border-width: 1px; border-color: rgb(68, 68, 68); color: rgb(68, 68, 68); background-color: rgb(221, 221, 221); z-index: 2; background-position: initial initial; background-repeat: initial initial;" class="wirejr new box"></div>
+                <div class="ui-resizable-handle ui-resizable-n" unselectable="on" ></div>
+                <div class="ui-resizable-handle ui-resizable-e" unselectable="on" ></div>
+                <div class="ui-resizable-handle ui-resizable-s" unselectable="on" ></div>
+                <div class="ui-resizable-handle ui-resizable-w" unselectable="on" ></div>
+                <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 1000001; " unselectable="on"></div>
+                <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1000002; " unselectable="on"></div>
+                <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000003; " unselectable="on"></div>
+                <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000004; " unselectable="on"></div>
+            </div>
+
+            <div class="wire ui-draggable ui-resizable selected" style="top: 80px; left: 200px; width: 245px; height: 161px; position: absolute;" aria-disabled="false">
+                <div style="top: 0px !important; left: 0px !important; height: 159px; width: 243px; border-width: 1px; border-color: rgb(68, 68, 68); color: rgb(68, 68, 68); background-color: rgb(221, 221, 221); z-index: 4; background-position: initial initial; background-repeat: initial initial;" class="wirejr latestwire new box"></div>
+                <div class="ui-resizable-handle ui-resizable-n" unselectable="on" style="display: block;"></div>
+                <div class="ui-resizable-handle ui-resizable-e" unselectable="on" style="display: block;"></div>
+                <div class="ui-resizable-handle ui-resizable-s" unselectable="on" style="display: block;"></div>
+                <div class="ui-resizable-handle ui-resizable-w" unselectable="on" style="display: block;"></div>
+                <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 1000001; display: block;" unselectable="on"></div>
+                <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1000002; display: block;" unselectable="on"></div>
+                <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000003; display: block;" unselectable="on"></div>
+                <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000004; display: block;" unselectable="on"></div>
+            </div>
+        </div>
+
+        <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se icon-resize-full" style="z-index: 1000001;" unselectable="on"></div>
+</div>
+
+</div>
+
+<div class="bottomright">
+    <span class="canvassize"><b>canvas</b>: 999/451px</span>
+    <span class="coord"><b>X</b>: 1086 <b>Y</b>: 381</span>
+    <span class="dim"><b>W</b>: 240px, <b>H</b>: 160px</span>
+    <a href="https://chrome.google.com/webstore/detail/wireframecc/ckdndemedapacbnpapaickknpmojjpmn" class="chrome" target="_blank"><i class="icon-inbox"></i> Get Chrome app </a>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
