@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+
+
+
+
+/*객체의 크기를 미리 표시*/
+.areaDisplay {
+	background-color: rgba(0, 0, 0, 0.145098);
+	z-index: 7;
+	position: absolute;
+}
+
+/*삽입될 객체의 크기를 미리 표시*/
+.areaDisplay.resizing {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIUlEQVQYV2NkYGCQBGJ08BxdgHGIKMTiF0wPgjwz2BUCADTeBYguWvyCAAAAAElFTkSuQmCC);
+}
+
+/*선택되는 영역의 크기 표시 ( = jquery-ui의 selecting)*/
+.areaDisplay.selector {
+	border: 1px dashed #444;
+	background: transparent !important;
+}
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,8 +7,16 @@
         <!-- The stylesheets -->
         <link rel="stylesheet" href="css/canvas/jquery-ui.css" type="text/css">
         <link rel="stylesheet" href="css/canvas/style.1.2.css" type="text/css"/>
-        <link rel="stylesheet" href="css/canvas/component.css" type="text/css"/>
+        <link rel="stylesheet" href="css/canvas/canvas.css" type="text/css"/>
+        
+        
 
+        <!--
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+        <script src="jquery-ui.1.7.2.js"></script>
+        <script src="css/canvas/wireframe.2.54.js"></script>
+        -->
+        
         <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -39,22 +47,25 @@ svg {
 
     <!--
     참고 : https://wireframe.cc/
+    
+    jQuery Autosize : http://www.jacklmoore.com/autosize/
     -->
 
     <body>
 
-<div class="supercanvas">
+<div>
 
 
 
 
 <div id="canvas-wrap" class="browser-wrap ui-resizable ui-draggable" snappy="0" data-grid="graph"
-    style="left: 203.5px; margin-left: 0px;">
+    style="left: 203.5px; margin: auto;">
 
 
 
         <div id="canvas" class="ui-boxer">
-
+        	
+        	<!--배경 격자-->
             <div id="grid-div" style="width:100%;height:100%;overflow:hidden;">
 
                 <svg id="svg-grid" zoomAndPan="disable" currentscale="2" xmlns="http://www.w3.org/2000/svg" version="1.2" width="3000" height="12000">
@@ -75,10 +86,12 @@ svg {
                 </svg>
 
             </div>
-
+            
+            <!--snap 선-->
             <div id="guide-h" class="guide" style="top: 240px; display: block;"></div>
             <div id="guide-v" class="guide" style="left: 460px; display: block;"></div>
-
+            
+            <!--객체1-->
             <div class="wire ui-draggable ui-resizable ui-resizable-autohide" style="top: 100px; left: 460px; width: 221px; height: 141px;" aria-disabled="false">
                 <div style="top: 0px !important; left: 0px !important; height: 139px; width: 219px; border-width: 1px; border-color: rgb(68, 68, 68); color: rgb(68, 68, 68); background-color: rgb(221, 221, 221); z-index: 2; background-position: initial initial; background-repeat: initial initial;" class="wirejr new box"></div>
                 <div class="ui-resizable-handle ui-resizable-n" unselectable="on" ></div>
@@ -90,7 +103,8 @@ svg {
                 <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000003; " unselectable="on"></div>
                 <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000004; " unselectable="on"></div>
             </div>
-
+            
+            <!--선택 표시 객체-->
             <div class="wire ui-draggable ui-resizable selected" style="top: 80px; left: 200px; width: 245px; height: 161px; position: absolute;" aria-disabled="false">
                 <div style="top: 0px !important; left: 0px !important; height: 159px; width: 243px; border-width: 1px; border-color: rgb(68, 68, 68); color: rgb(68, 68, 68); background-color: rgb(221, 221, 221); z-index: 4; background-position: initial initial; background-repeat: initial initial;" class="wirejr latestwire new box"></div>
                 <div class="ui-resizable-handle ui-resizable-n" unselectable="on" style="display: block;"></div>
@@ -102,10 +116,24 @@ svg {
                 <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000003; display: block;" unselectable="on"></div>
                 <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000004; display: block;" unselectable="on"></div>
             </div>
-        </div>
+            
+            
+	        <!--객체 크기 영역 표시-->
+			<div class="areaDisplay resizing" style="left: 80px;top: 100px;width: 100px;height: 100px;"></div>
+			<!--선택  영역 표시-->
+			<div class="areaDisplay selector" style="left: 80px;top: 250px;width: 100px;height: 100px;"></div>
 
+        </div>
+        
+        <!--캔버스 리사이징-->
         <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se icon-resize-full" style="z-index: 1000001;" unselectable="on"></div>
-</div>
+        
+
+	</div>
+
+
+
+
 
 </div>
 
@@ -114,11 +142,7 @@ svg {
     <span class="coord"><b>X</b>: 1086 <b>Y</b>: 381</span>
     <span class="dim"><b>W</b>: 240px, <b>H</b>: 160px</span>
     <a href="https://chrome.google.com/webstore/detail/wireframecc/ckdndemedapacbnpapaickknpmojjpmn" class="chrome" target="_blank"><i class="icon-inbox"></i> Get Chrome app </a>
-  </div>
-
-
-
-
+</div>
 
 
 
