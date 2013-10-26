@@ -1,0 +1,66 @@
+//------------------------------------------------
+// Pakage
+//------------------------------------------------
+
+// dependancy 확인 : package.json
+
+//------------------------------------------------
+// TDD 실행 방법
+//------------------------------------------------
+
+$ jasmine-node ./tests
+
+//------------------------------------------------
+// template 엔진 : hogan.js
+//------------------------------------------------
+
+http://twitter.github.io/hogan.js/
+https://github.com/twitter/hogan.js
+http://lambdaexp.tistory.com/64
+
+- template 준비
+var template = Hogan.compile($('.template').html());
+
+- template에 data 적용
+var output = template.render(data);
+
+- 화면에 출력
+$(document.body).append(output);
+
+//------------------------------------------------
+// mongodb
+//------------------------------------------------
+
+// mongodb 설치 : http://www.mongodb.org/downloads
+http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/
+
+// CMD 설정 (관리자 권한으로 설정)
+
+* 데이터 저장소
+- 디렉토리 생성 : C:\mongodb\data\db 
+- 쓰기권한 설정 확인할것
+c:\mongodb\bin> mongod --dbpath "C:\mongodb\data\db"
+
+* 로그파일 위치
+c:\mongodb\bin> mongod --logpath "C:\mongodb\log\log.txt"
+
+* 포트 변경 (default : 27017)
+c:\mongodb\bin> mongod --port 8000
+
+* Admin Page 주소세팅
+c:\mongodb\bin> mongod --bind_ip 127.0.0.1
+- port+1000으로 세팅하면 웹페이지가 보여진다.
+- http://localhost:28017/
+
+* 실행(관리자 권한)
+c:\mongodb\bin> mongod
+or
+c:\mongodb\bin> mongod --dbpath "C:\mongodb\data\db"
+
+예)
+cd "C:\mongodb\bin"
+mongod --logpath "C:\mongodb\log\log.txt" --bind_ip 127.0.0.1 --logappend --directoryperdb --install
+mongod --dbpath "C:\mongodb\data\db"
+mongod --install --serviceName Mongodb --serviceDisplayName Mongodb
+
+
