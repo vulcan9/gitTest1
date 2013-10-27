@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>{{ title }}</title>
-		<link rel='stylesheet' href='/admin/stylesheets/style.css' />
+		<link rel='stylesheet' href='/asset_admin/stylesheets/style.css' />
 	</head>
 	<body class="admin">
 		<div class="container">

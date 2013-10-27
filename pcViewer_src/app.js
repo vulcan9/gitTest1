@@ -43,6 +43,7 @@ MongoClient.connect('mongodb://' + config.mongo.host + ':' + config.mongo.port +
 			next();
 		};
 		app.all('/admin*', attachDB, function(req, res, next) {
+			console.log('* session : ', req.session);
 			Admin.run(req, res, next);
 		});			
 		app.all('/blog/:id', attachDB, function(req, res, next) {

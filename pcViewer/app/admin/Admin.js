@@ -8,7 +8,8 @@ var AdminModel = require("./AdminModel");
 var model = new AdminModel();
 
 
-var AdminClass = Controller.extend({
+module.exports = Controller.extend({
+	//name: "Admin",
 	username: "admin",
 	password: "admin",
 	authorize: function(req) {
@@ -82,6 +83,14 @@ var AdminClass = Controller.extend({
 		
 	},
 	
+	del: function(req, callback) {
+		if(req.query && req.query.action === "delete" && req.query.id) {
+			model.remove(req.query.id, callback);
+		} else {
+			callback();
+		}
+	},
+	
 	list: function(callback) {
 		model.getlist(function(err, records) {
 			var markup = '<table>';
@@ -106,12 +115,14 @@ var AdminClass = Controller.extend({
 				</tr>\
 			';
 			}
+			
 			markup += '</table>';
 			callback(markup);
 		});
 	},
 	form: function(req, res, callback) {
 		var returnTheForm = function() {
+			
 			if(req.query && req.query.action === "edit" && req.query.id) {
 				model.getlist(function(err, records) {
 					if(records.length > 0) {
@@ -138,6 +149,7 @@ var AdminClass = Controller.extend({
 				});
 			}
 		};
+		
 		if(req.body && req.body.formsubmitted && req.body.formsubmitted === 'yes') {
 			var data = {
 				title: req.body.title,
@@ -153,13 +165,7 @@ var AdminClass = Controller.extend({
 			returnTheForm();
 		}
 	},
-	del: function(req, callback) {
-		if(req.query && req.query.action === "delete" && req.query.id) {
-			model.remove(req.query.id, callback);
-		} else {
-			callback();
-		}
-	},
+
 	handleFileUpload: function(req) {
 		if(!req.files || !req.files.picture || !req.files.picture.name) {
 			return req.body.currentPicture || '';
@@ -169,10 +175,10 @@ var AdminClass = Controller.extend({
 		var uid = crypto.randomBytes(10).toString('hex');
 		
 		// __dirname --> Admin.js 파일 위치임
-		var dir = __dirname + "/../../public/admin/uploads/" + uid;
+		var dir = __dirname + "/../../public/asset_admin/uploads/" + uid;
 		fs.mkdirSync(dir, '0777');
 		fs.writeFileSync(dir + "/" + fileName, data);
-		return '/admin/uploads/' + uid + "/" + fileName;
+		return '/asset_admin/uploads/' + uid + "/" + fileName;
 	}
 	
 	
@@ -180,4 +186,3 @@ var AdminClass = Controller.extend({
 
 
 
-module.exports = AdminClass;

@@ -21,7 +21,7 @@ app.use(express.session());
 
 //development only
 if ('development' == app.get('env')) {
-  	app.use(express.errorHandler());
+	app.use(express.errorHandler());
 }
 
 /*
@@ -36,14 +36,14 @@ app.use(function (req, res, next){
 });
 */
 
-// Templete 지정
+//Templete 지정
 setTemplete('hjs');
-
-//정적 디렉토리 설정
-setPath();
 
 //라우터 설정
 setRouter();
+
+//정적 디렉토리 설정
+setPath();
 
 // 서버 설정
 //app.set('port', process.env.PORT || 3000);
@@ -52,21 +52,6 @@ console.log('Server Config : ', config);
 
 // DB 연결
 dbConnect();
-
-// Server 연결
-serverConnect();
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //-----------------------------------
@@ -80,18 +65,20 @@ function setTemplete(engine){
 	}
 }
 
-function setPath(){
-	var path = require('path');
-	app.use(express.static(path.join(__dirname, 'public')));
-	//app.use(require('less-middleware')({ src: __dirname + '/public' }));	
-}
-
 function setRouter(){
-	// 라우터 설정(요청에 따라 응답을 결정).
-	//app.use(app.router);
+	//라우터 설정(요청에 따라 응답을 결정).
+	app.use(app.router);
 	
 	var router = require('./app/router');
 	router.set(app);
+}
+
+function setPath(){
+	// "less-middleware": "0.1.12"
+	//app.use(require('less-middleware')({ src: __dirname + '/public' }));
+	
+	var path = require('path');
+	app.use(express.static(path.join(__dirname, 'public')));
 }
 
 //-----------------------------------
@@ -101,11 +88,14 @@ function setRouter(){
 function dbConnect(){
 	var DB = require('./app/db');
 	DB.connect(config.database, function(err, db){
-		if (err) throw err;
+		if (err) throw '# DB연결 실패 : \n' + err;
 		console.log('# DB connected to : ', 'mongodb://' + config.database.host + ':' + config.database.port);
 		
 		// db 객체를 저장해 둔다
 		app.set('DB_OBJECT', db);
+
+		// Server 연결
+		serverConnect();
 	});	
 }
 

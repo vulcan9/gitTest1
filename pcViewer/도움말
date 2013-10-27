@@ -3,6 +3,8 @@
 //------------------------------------------------
 
 // dependancy 확인 : package.json
+$ cd /D/project/nodeJS/project/pcViewer
+$ npm install
 
 //------------------------------------------------
 // TDD 실행 방법

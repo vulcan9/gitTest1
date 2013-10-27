@@ -4,7 +4,7 @@
 var config = {
 	local: {
 		mode: 'local',
-		port: 3000,
+		port: 2000,
 		database: {
 			type: "mongodb",
 			host: '127.0.0.1',

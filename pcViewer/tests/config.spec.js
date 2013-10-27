@@ -1,5 +1,4 @@
-﻿
-describe("Configuration setup", function()
+﻿describe("Configuration setup", function()
 {
 	it("should load local configurations", function(next)
 	{
