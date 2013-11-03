@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>JS Bin</title>
+		
+		<link rel="stylesheet" href="./style.css" type="text/css" charset="utf-8"/>
+		
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		
+	
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/ember.js/1.1.2/ember.min.js"></script>
+
+<!--
+<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ember.js/1.0.0-rc.1/ember.js"></script>
+
+<script src="http://builds.emberjs.com/handlebars-1.0.0.js"></script>
+<script src="http://builds.emberjs.com/tags/v1.1.2/ember.min.js"></script>
+-->
+		
+		
+		<script src="app.js"></script>
+		
+	</head>
+	<body>
+
+
+		<script type="text/x-handlebars">
+			<nav id="master">
+				<header>All Contacts ({{controller.length}})</header>
+				<ul>
+					{{#each controller}}
+					<li>{{#linkTo "contact" this}}{{first}} {{last}}{{/linkTo}}</li>
+					{{/each}}
+				</ul>
+				<div id="controls">
+					<button class="btn">+</button>
+					<button class="btn pull-right">-</button>
+				</div>
+			</nav>
+			<div id="detail">
+				<div class="welcome"><h2>Address Book</h2></div>
+				<!--route에 따라 template 적용-->
+				{{outlet}}
+			</div>
+		</script>
+
+		<script type="text/x-handlebars" id="index">
+			<div class="welcome"><h2>Welcome Book</h2></div>
+		</script>
+
+		<script type="text/x-handlebars" id="contact">
+			<header class="contact-header">
+				<div class="avatar">
+					<img {{bindAttr src="avatar"}}>
+				</div>
+			</header>
+
+			<dl class="contact-data">
+				<dt><label for="contact-first">First Name</label></dt>
+				<dd>{{input value=first id="contact-first"}}</dd>
+	
+				<dt><label for="contact-last">Last Name</label></dt>
+				<dd>{{input value=last id="contact-last"}}</dd>
+	
+				<dt><label for="contact-avatar">Avatar URL</label></dt>
+				<dd>{{input value=avatar id="contact-avatar"}}</dd>
+	
+				<dt><label for="contact-github">Github</label></dt>
+				<dd>
+					{{input value=github id="contact-github"}}
+					{{#if github}}
+					<br><a {{bindAttr href="github"}}>view ➚</a>
+					{{/if}}
+				</dd>
+	
+				<dt><label for="contact-twitter">Twitter</label></dt>
+				<dd>
+					{{input value=twitter id="contact-twitter"}}
+					{{#if twitter}}
+					<br><a {{bindAttr href="twitter"}}>view ➚</a>
+					{{/if}}
+				</dd>
+	
+				<dt><label for="contact-notes">Notes</label></dt>
+				<dd>{{textarea value=notes id="contact-notes"}}</dd>
+			</dl>
+		</script>
+
+
+
+
+
+	</body>
+</html>
