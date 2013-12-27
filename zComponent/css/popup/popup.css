@@ -1,0 +1,225 @@
+﻿body{
+	margin: 0px;
+	padding: 0px;
+}
+
+div, ul, li{
+	/*background-color: rgb(255, 0, 0);
+	border: 1px solid red;*/
+}
+
+.viewContainer{
+	position: absolute;
+	overflow: hidden;
+	margin: 50px;
+	padding: 0px;
+
+	top:0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+
+	min-width: 680px;
+	min-height: 1500px;
+	/*background: url('./images/bg.png');*/
+}
+
+/*////////////////////////////////////////////////
+//
+// popup
+//
+////////////////////////////////////////////////*/
+
+.popup{
+	position:fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	font-family: '나눔고딕', '맑은 고딕';
+}
+
+.popup .background{
+	position:absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+
+	/*modal*/
+	background-color: #000000;
+	opacity: 0.3;
+	filter: alpha(opacity=0.3);
+}
+
+.popup .content{
+	position:absolute;
+	min-width: 350px;
+	max-width: 500px;
+
+	left: 50%;
+	top: 50%;
+	/*중앙 정렬 위해 스크립트에서 위치 조절*/
+	margin-left:-175px;
+	margin-top:-85px;
+
+	background: url('./images/popup/popup_bg.png') repeat;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	overflow: hidden;
+
+	/*그림자 효과*/
+	box-shadow:			0px 0px 50px -5px #000000;
+	-webkit-box-shadow:	0px 0px 20px -5px #000000;
+	-moz-box-shadow:	0px 0px 50px -5px #000000;
+}
+
+.popup .titleGroup{
+	position:relative;
+	width: 100%;
+	height: 53px;
+
+	background: url('./images/popup/alert_map.png') repeat-x;
+	text-align:center;
+	vertical-align: middle;
+	line-height: 53px;
+
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+
+
+
+.popup .content .titleGroup .title{
+	position:absolute;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+
+	display: inline-block;
+	background: url('./images/popup/alert_map.png') no-repeat;
+	background-position: -120px -75px;
+}
+.popup .content .titleGroup .closeButton{
+	position:absolute;
+	right: 0px;
+	width: 53px;
+	height: 53px;
+	background: url('./images/popup/alert_map.png') no-repeat;
+	background-position: 0px -75px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.popup .contentGroup{
+	position:relative;
+	/*width: 100%;*/
+	min-height: 20px;
+	padding: 20px;
+	/*padding-bottom: 0px;*/
+	text-align:center;
+	vertical-align: middle;
+
+	line-height: 150%;
+	color: #777777;
+	font-size: small;
+}
+.popup .buttonGroup{
+	position:relative;
+	width: 100%;
+	height: 60px;
+}
+
+
+
+	.popup .buttonGroup ul{
+		margin: auto;
+		padding: 0px;
+		position: relative;
+		/*width:100%;*/
+		display: inline-block;
+		font-size: 0px;
+
+		float: right;
+		left: -50%;
+	}
+		.popup .buttonGroup ul li{
+			display: inline-block;
+			width: 102px;
+			height: 42px;
+			cursor: pointer;
+			margin: 0px 5px;
+
+			float: left;
+			left: 50%;
+			position: relative;
+		}
+
+.popup .buttonGroup ul li .button_yes{
+	width: 102px;
+	height: 42px;
+	background: url('./images/popup/alert_map.png') no-repeat;
+	background-position: 0px -150px;
+}
+.popup .buttonGroup ul li .button_no{
+	width: 102px;
+	height: 42px;
+	background: url('./images/popup/alert_map.png') no-repeat;
+	background-position: -120px -150px;
+}
+/*
+.popup .buttonGroup .button_yes{
+	position:absolute;
+	width: 102px;
+	height: 42px;
+	background: url('./images/popup/alert_map.png') no-repeat;
+	background-position: 0px; -150px;
+}
+.popup .buttonGroup .button_no{
+	position:absolute;
+	width: 102px;
+	height: 42px;
+	background: url('./images/popup/alert_map.png') no-repeat;
+	background-position: -120px; -150px;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,3 +1,7 @@
+// Simple WhiteBoard using Javascript, WebSocket, Node.js, Knockout JS and JQuery
+// https://github.com/ixzo/WhiteBoard
+
+
 // http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/
 "use strict";
 

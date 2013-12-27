@@ -92,7 +92,7 @@ namespace('client', function () {
                     if (err) console.log(('- failed to read ' + files[index]).red);
                     
                     readFiles[index] = file;
-                    if (debug) console.log(('read ' + files[index]).grey)
+                    if (debug) console.log(('read ' + files[index]).grey);
                     remaining--;
                     
                     // go on if all files are read in
@@ -112,7 +112,7 @@ namespace('client', function () {
             mkdirs(dirs('public/js'), 0755, function(err) {
                 if (err) {
                     console.log('- failed to make folder public/js'.red);
-                    fail('client:build - failed to make folder public/js')
+                    fail('client:build - failed to make folder public/js');
                 }
                 
                 // concate the files array
@@ -125,7 +125,7 @@ namespace('client', function () {
                 fs.writeFile('./public/js/client.js', concate, 'utf8', function(err) {
                     if (err) { 
                         console.log('- failed to write public/js/client.js'.red);
-                        fail('client:build - failed to write public/js/client.js')
+                        fail('client:build - failed to write public/js/client.js');
                     } else {
                         
                         // a basic smoosh configuration object
@@ -137,7 +137,7 @@ namespace('client', function () {
                               "public/js/client.js",
                             ]
                           }
-                        })
+                        });
 
                         // run smoosh to get minified version of the js file
                         smoosh.build().analyze();
@@ -146,7 +146,7 @@ namespace('client', function () {
                     }
                 });
             });
-        }
+        };
     });
 });
 
@@ -161,7 +161,7 @@ var pathDepth = function(str) {
         sep += ' ';
     }
     return sep;
-}
+};
 
 // ### function dirs
 // will generate an array of folders out of a string   
@@ -190,7 +190,7 @@ var mkdirs = function(dirs, mode, cb){
     var createIfNotExists = function(dir, mode, cb) {
         fs.stat(dir, function(err, stat) {
             if (stat && stat.isDirectory()) {
-                cb()
+                cb();
             } else {
                 fs.mkdir(dir, mode, cb);
             }
@@ -210,7 +210,7 @@ var document = function(name, source, target, cb) {
     // first it will create the target folder and only callback on error   
     // __hint:__ the function _dirs_ will generate an array out of the target string. 
     mkdirs(dirs(target), 0755, function(err) {
-        if (err) cb(err)
+        if (err) cb(err);
         
         // __execute docco__ on success `docco myFile1 myFile2`
         var docco = exec('docco ' + source, function (err, stdout, stderr) {

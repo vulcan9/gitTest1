@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video.js | HTML5 Video Player</title>
+
+  <link rel="stylesheet" href="bootstrap.css" />
+  <link href="video-js.css" rel="stylesheet" type="text/css">
+
+  <!-- video.js must be in the <head> for older IEs to work. -->
+  <script src="video.dev.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <!--  -->
+  <script>
+
+  	// http://www.videojs.com/
+  	// https://github.com/videojs/video.js/blob/v4.3.0/docs/guides/setup.md
+  	// https://github.com/videojs/video.js/tree/v4.3.0/docs/api
+  	// http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html
+  	// http://videojs.com.s48059.gridserver.com/
+  	  //Unless using the CDN hosted version, update the URL to the Flash SWF
+    videojs.options.flash.swf = "video-js.swf";
+
+	$(function(){
+
+
+		var options = {
+			controls: true,
+			autoplay: false,
+
+			// none, metadata, auto
+			// "metadata"로 설정 하면 poster 설정하지 않아도 첫화면 보여짐
+			//preload: "metadata",
+
+			loop: false,
+			//poster:"oceans-clip.png",
+			width:640,
+			height:264
+		};
+
+		var player = videojs('example_video_1', options);
+		//console.log(player);
+
+		// 소스 설정
+		player.src("sample.mp4");
+		/*
+		// MP4만 설정 가능
+		//player.src("http://video-js.zencoder.com/oceans-clip.mp4");
+		player.src({ type: "video/webm", src: "http://video-js.zencoder.com/oceans-clip.webm" });
+
+		// 배열로 설정
+		player.src([
+			{ type: "video/mp4", src: "http://video-js.zencoder.com/oceans-clip.mp4" },
+			{ type: "video/webm", src: "http://video-js.zencoder.com/oceans-clip.webm" },
+			{ type: "video/ogg", src: "http://video-js.zencoder.com/oceans-clip.ogv" }
+		]);
+		*/
+
+		// Plugin 설정 예 : player의 기능을 확장할때 사용
+		// 따라서 player의 API와 같은 이름을 사용하면 오버라이딩 될 수 있음(주의)
+		// Plugin 호출 : player.addPlayerEvent();
+		videojs.plugin('addPlayerEvent', addPlayerEvent);
+		videojs.plugin('removePlayerEvent', removePlayerEvent);
+
+		/*
+		videojs.plugin('onRready', function(callback, paramArray){
+			if(!callback) return;
+
+			console.log(this);
+			if(this.isReady){
+				callback.apply(this, paramArray);
+			}else{
+				this.ready(function(){
+					callback.apply(this, paramArray);
+			    });
+			}
+		});
+		*/
+
+		player.ready(onPlayerReady);
+		function onPlayerReady(){
+			console.log("#Reay!", this.duration());
+			console.log("player : ", this.width(), this.height());
+
+			// scope : player
+			this.addPlayerEvent();
+			//this.play();
+		}
+
+
+
+
+		function addPlayerEvent(){
+			//console.log("#addPlayerEvent : ", this);
+			// 재생 관련
+			this.on('firstplay', onFirstplay);
+			this.on('play', onPlay);
+			this.on('pause', onPause);
+			this.on('ended', onEnded);
+			// Time 관련
+			this.on('durationchange', onDurationchange);
+			this.on('timeupdate', onTimeupdate);
+			// 기타
+			this.on('error', onError);
+			this.on('dispose', onDispose);
+			this.on('loadedmetadata', onLoadedmetadata);
+			this.on('fullscreenchange', onFullscreenchange);
+		}
+
+		function removePlayerEvent(){
+			//console.log("#removePlayerEvent : ", this);
+			// 재생 관련
+			this.off('firstplay', onFirstplay);
+			this.off('play', onPlay);
+			this.off('pause', onPause);
+			this.off('ended', onEnded);
+			// Time 관련
+			this.off('durationchange', onDurationchange);
+			this.off('timeupdate', onTimeupdate);
+			// 기타
+			this.off('error', onError);
+			this.off('dispose', onDispose);
+			this.off('loadedmetadata', onLoadedmetadata);
+			this.off('fullscreenchange', onFullscreenchange);
+		}
+
+		/*
+		API : https://github.com/videojs/video.js/blob/v4.3.0/docs/api/vjs.Player.md
+		http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#event-definitions
+
+		[METHODS]
+			//설정 : src, poster
+			//속성 : volume, currentTime, duration, muted, paused
+			//동작 : play, pause, requestFullScreen, cancelFullScreen
+			//기타 : dispose, hide, show
+
+		[EVENTS]
+			//에러 : error
+			//로드 : loadedalldata, loadeddata, loadedmetadata, loadstart, progress
+			//시간 : durationchange, timeupdate, ended  (currentTime == duration)
+			//재생 : firstplay, pause, play
+			//기타 : fullscreenchange, volumechange, resize, fullscreenchange
+		*/
+
+
+			// 재생 관련
+			function onFirstplay(e){
+				console.log('on firstplay!(isPlaying)', !this.paused());
+			}
+
+			function onPlay(e) {
+				console.log('on play!(isPlaying)', !this.paused());
+			}
+
+			function onPause(e) {
+				console.log('on pause!(isPause)', this.paused());
+			}
+
+			function onEnded(e) {
+				console.log('on ended!(isPause)', this.paused());
+			}
+
+			// Time 관련
+			function onDurationchange(e) {
+				console.log('on durationchange!(duration)', this.duration());
+			}
+
+			function onTimeupdate(e) {
+				console.log('on timeupdate!(time)', this.currentTime());
+			}
+
+			// Error
+			function onError(e) {
+				console.log('on error!', e);
+			}
+
+			// 기타
+			function onDispose(e) {
+				console.log('on dispose!', e);
+				this.removePlayerEvent();
+			}
+
+			function onLoadedmetadata(e) {
+				console.log('on loadedalldata : ', e.currentTarget.videoWidth, e.currentTarget.videoHeight);
+			}
+
+			function onFullscreenchange(e) {
+				console.log('on fullscreenchange : ', this.player().isFullScreen);
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		$("#playButton").on('click', function (){
+			player.play();
+		});
+
+		$("#stopButton").on('click', function (){
+			var isPlaying = !player.paused();
+			if(isPlaying){
+				player.pause();
+			}
+			player.currentTime(0);
+		});
+
+		$("#pauseButton").on('click', function (){
+			player.pause();
+		});
+
+		$("#disposeButton").on('click', function (){
+			player.dispose();
+		});
+
+
+
+
+    });
+
+
+  </script>
+
+
+</head>
+<body>
+
+  <video id="example_video_1"
+        class="video-js vjs-default-skin vjs-big-play-centered"
+        >
+	<!--
+    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track>Tracks need an ending tag thanks to IE9 -->
+    <!-- <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>Tracks need an ending tag thanks to IE9 -->
+  </video>
+
+
+    <input type="button" value="play" class="btn btn-default" id="playButton">
+    <input type="button" value="stop" class="btn btn-default" id="stopButton">
+    <input type="button" value="pause" class="btn btn-default" id="pauseButton">
+
+    <input type="button" value="dispose" class="btn btn-default" id="disposeButton">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

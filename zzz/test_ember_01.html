@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Application</title>
+
+        <!--
+        http://ember101.com/videos/001-intro-and-binding-data-to-templates
+        -->
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.js"></script>
+<script src="http://ryanflorence.com/ember.min.js"></script>
+
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+        <script type="text/javascript">
+            var App = Ember.Application.create();
+
+            /*
+            // Episode 1: Intro to Ember, Binding Data to Templates
+            App.name = "Hello World!";
+            App.secondsOnPage = 0;
+            setInterval(function() {
+              App.set('secondsOnPage', App.get('secondsOnPage') + 1);
+            }, 1000);
+
+              <script type="text/x-handlebars">
+                <h1>{{App.name}}</h1>
+                <h2>{{App.secondsOnPage}}</h2>
+                .......
+
+           // Episode 2: Your First Route, Providing Data to Templates
+            App.ApplicationRoute = Ember.Route.extend({
+
+                model : function() {
+                    return {
+                        name : 'My App',
+                        timer : 0
+                    };
+                },
+
+                activate : function() {
+                    console.log("activate : ", this);
+                    this.interval = setInterval( function() {
+                        var timer = this.get('controller.model.timer');
+                        this.set('controller.model.timer', timer + 1);
+                    }.bind(this), 1000);
+                },
+
+                deactivate : function() {
+                    clearInterval(this.interval);
+                }
+            });
+              <script type="text/x-handlebars">
+                <h1>{{name}}</h1>
+                <h2>{{timer}}</h2>
+            */
+
+           // Episode 3: Displaying a List of Data and Template Helpers
+           var users = [
+                    {
+                        id: 1,
+                        first: 'Ryan',
+                        last: 'Florence',
+                        avatar: 'https://si0.twimg.com/profile_images/3123276865/5c069e64eb7f8e971d36a4540ed7cab2.jpeg'
+                    },
+                    {
+                        id: 2,
+                        first: 'Tom',
+                        last: 'Dale',
+                        avatar: 'https://si0.twimg.com/profile_images/1317834118/avatar.png'
+                    },
+                    {
+                        id: 3,
+                        first: 'Yehuda',
+                        last: 'Katz',
+                        avatar: 'https://si0.twimg.com/profile_images/3250074047/46d910af94e25187832cb4a3bc84b2b5.jpeg'
+                    }
+            ];
+
+            App.ApplicationRoute = Ember.Route.extend({
+
+                model : function() {
+                    return users;
+                }
+            });
+
+        </script>
+
+        <style type="text/css">
+            img {
+              width: 50px;
+              margin-right: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <script type="text/x-handlebars">
+            <ul class="nav well">
+            {{#each model}}
+              {{render "user" this}}
+            {{/each}}
+            </ul>
+        </script>
+
+        <script type="text/x-handlebars" id="user">
+            <li>
+                <p>
+                    <img {{bindAttr src="avatar"}}>
+                    <b>{{first}} {{last}}</b>
+                </p>
+            </li>
+        </script>
+
+    </body>
+</html>

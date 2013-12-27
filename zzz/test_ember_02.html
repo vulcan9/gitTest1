@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Application</title>
+
+        <!--
+        http://ember101.com/videos/001-intro-and-binding-data-to-templates
+        -->
+
+<meta name="description" content="Ember: Routes, {{outlet}}, and {{#linkTo}}" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ember.js/1.0.0-rc.1/ember.js"></script>
+
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+        <script type="text/javascript">
+            var App = Ember.Application.create();
+
+            // Episode 4: Master-Detail: Router.map, {{outlet}}, {{#linkTo}}
+            App.Router.map(function() {
+                this.resource('user', {
+                    path : '/users/:user_id'
+                });
+            });
+
+            App.UserRoute = Ember.Route.extend({
+                model : function(params) {
+                    return users[params.user_id];
+                }
+            });
+
+            App.ApplicationRoute = Ember.Route.extend({
+                model : function() {
+                    return users;
+                }
+            });
+
+           var users = [
+                    {
+                        id: 1,
+                        first: 'Ryan',
+                        last: 'Florence',
+                        avatar: 'https://si0.twimg.com/profile_images/3123276865/5c069e64eb7f8e971d36a4540ed7cab2.jpeg'
+                    },
+                    {
+                        id: 2,
+                        first: 'Tom',
+                        last: 'Dale',
+                        avatar: 'https://si0.twimg.com/profile_images/1317834118/avatar.png'
+                    },
+                    {
+                        id: 3,
+                        first: 'Yehuda',
+                        last: 'Katz',
+                        avatar: 'https://si0.twimg.com/profile_images/3250074047/46d910af94e25187832cb4a3bc84b2b5.jpeg'
+                    }
+            ];
+        </script>
+
+        <style type="text/css">
+            body { margin-top: 30px }
+            .active {
+              color: red !important;
+            }
+            img {
+              width: 50px;
+              margin-right: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <script type="text/x-handlebars">
+            <div class="container">
+                <div class="row-fluid">
+                    <ul class="nav nav-list span3 well">
+                        {{#each model}}
+                        <li>
+                            {{#linkTo "user" this}}{{first}}{{/linkTo}}
+                        </li>
+                        {{/each}}
+                    </ul>
+                    <div class="span9 well">{{outlet}}</div>
+                </div>
+            </div>
+        </script>
+
+        <script type="text/x-handlebars" id="user">
+            <h2> {{first}} {{last}} <img {{bindAttr src="avatar"}} class="pull-right" width=50 /></h2>
+            <dl>
+                <dt>
+                    First
+                </dt>
+                <dd>
+                    {{first}}
+                </dd>
+                <dt>
+                    Last
+                </dt>
+                <dd>
+                    {{last}}
+                </dd>
+            </dl>
+        </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>popup</title>
+
+
+		<link href="./css/popup/popup.css" type="text/css" rel="stylesheet"/>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+		<script type="text/javascript">
+
+			$(function(){
+
+				//------------------------------
+				// 팝업 샘플 코드
+				//------------------------------
+
+				function popupSample(template, popupConfig)
+				{
+					// popup parent 설정 (default : <body>)
+					var popupOwner = $("body");
+
+					/*
+					// popup UI 템플릿 지정(기능에 따라 UI를 바꿔 적용)
+					//var template = $("#alertTemplate");
+					var template = $("#confirmTemplate");
+
+					// 팝업 설정 데이터
+					var popupConfig ={
+						title: "수업종료",
+						content: "진행중인 수업을 종료 하시겠습니까? 수업 종료된 내용은 수업이력에 저장됩니다.",
+						modal: true,
+						movable:true
+					};
+					*/
+
+					var popup = new PopupClass(template, popupOwner);
+
+					// Open
+					var popupInstance = popup.open(popupConfig, function(data){
+						//console.log("팝업창 인스턴스 접근 : ", popupInstance);
+						if(data){
+							console.log("팝업창 닫힘 핸들러 : ", data);
+						}else{
+							console.log("팝업창 닫힘 핸들러 : 취소");
+						}
+					});
+				}
+
+				//------------------------------
+				// Alert 샘플
+				//------------------------------
+
+				$("#alertButton").on("click", function(){
+					var popupConfig ={
+						title: "Alert 제목",
+						content: "진행중인 수업을 종료 하시겠습니까? 수업 종료된 내용은 수업이력에 저장됩니다.",
+						modal: true,
+						movable:true
+					};
+					popupSample($("#alertTemplate"), popupConfig);
+				});
+
+				//------------------------------
+				// Confirm 샘플
+				//------------------------------
+
+				$("#confirmButton").on("click", function(){
+					var popupConfig ={
+						title: "수업종료",
+						content: "진행중인 수업을 종료 하시겠습니까? <br>" +
+								"수업 종료된 내용은 수업이력에 저장됩니다.<br>" +
+								"줄바꿈은 BR 태그를 사용합니다.<br>" +
+								"줄바꿈은 BR 태그를 사용합니다.<br>" +
+								"줄바꿈은 BR 태그를 사용합니다.",
+						modal: true,
+						movable:true
+					};
+					popupSample($("#confirmTemplate"), popupConfig);
+				});
+
+				//------------------------------
+				// 기타 내용 Content 샘플
+				//------------------------------
+
+				$("#formButton").on("click", function(){
+					var popupConfig ={
+						title: "Form 전송",
+						//content: "진행중인 수업을 종료 하시겠습니까? 수업 종료된 내용은 수업이력에 저장됩니다.",
+						content: '<form action="demo_form.asp">' +
+						  'First name: <input type="text" name="fname"><br>' +
+						  'Last name: <input type="text" name="lname"><br>' +
+						'</form>',
+						//modal: true,
+						movable:true
+					};
+					var template = $("#alertTemplate");
+
+					// Open
+					var popup = new PopupClass(template);
+					var popupInstance = popup.open(popupConfig, function(data){
+
+						if(data === undefined){
+							console.log("# 취소");
+							return;
+						}
+
+						//console.log("팝업창 인스턴스 접근 : ", popupInstance);
+						var fname = popupInstance.find("input[name=fname]").val();
+						var lname = popupInstance.find("input[name=lname]").val();
+
+						console.log("설정 내용 : ", fname, lname);
+						console.log("팝업창 닫힘 결과  : ", data);
+						console.log("# Submit (전송 시작)");
+					});
+				});
+			});
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<div class="viewContainer">
+				<button id="alertButton" style="width: 100px; height: 30px">Alert</button>
+				<button id="confirmButton" style="width: 100px; height: 30px">Confirm</button>
+				<button id="formButton" style="width: 100px; height: 30px">Form Content</button>
+		</div>
+
+		<script type="text/javascript" src="./js/popup/PopupClass.js"></script>
+
+		<!--Alert 팝업창 템플릿-->
+		<script type="text/javascript" src="./js/empty.js" id="alertTemplate">
+			<div class="popup">
+				<div class="background"></div>
+				<div class="content">
+					<div class="titleGroup">
+						<div class="title">제목</div>
+						<div class="closeButton"></div>
+					</div>
+					<div class="contentGroup">내용</div>
+					<div class="buttonGroup">
+						<ul>
+							<li><div class="button_yes"></div></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</script>
+
+		<!--Confirm 팝업창 템플릿-->
+		<script type="text/javascript" src="./js/empty.js" id="confirmTemplate">
+			<div class="popup">
+				<div class="background"></div>
+				<div class="content">
+					<div class="titleGroup">
+						<div class="title">제목</div>
+						<div class="closeButton"></div>
+					</div>
+					<div class="contentGroup">내용</div>
+					<div class="buttonGroup">
+						<ul>
+							<li><div class="button_yes"></div></li>
+							<li><div class="button_no"></div></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</script>
+
+
+
+	</body>
+</html>
